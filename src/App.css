@@ -1,0 +1,62 @@
+/* Styles for Error Page */
+.err-container {
+    height: 500px;
+    width: 800px;
+    background-color: rgb(220, 220, 220);
+    text-align: center;
+    margin: 5em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 5px;
+
+}
+
+.err-msg-container {
+    margin: auto;
+}
+
+.err-code {
+    
+    font-size: 8em;
+    color: grey;
+}
+
+.err-msg {
+    color: black;
+    margin: 3em auto;
+    font-size: 1.5em;
+}
+
+.err-link {
+    color: black;
+    border: 1px solid black;
+    padding: 1.5em;
+    width: 10em;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.err-link:hover {
+    background-color: rgba(0,0,0,0.5);
+    color: white; 
+
+}
+
+@media screen and (max-width:800px) {
+    .err-container {
+        width: 80%;
+    }
+
+    .err-code {
+        font-size: 5em;
+    }
+
+    .err-msg {
+        font-size: 1em;
+    }
+}
+
+
