@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { GitContext } from '../context';
+import { GitContext } from '../Context/context';
 import { NavWrapper } from '../Wrappers';
 
 const NavBar = () => {
