@@ -3,7 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import ErrorPage from './pages/ErrorPage';
-function App() {
+const App = () => {
 
   return (
     <div className="App">

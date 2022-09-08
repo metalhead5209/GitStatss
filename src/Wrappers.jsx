@@ -74,3 +74,39 @@ h1 {
 }
   
 `;
+
+
+// NAVBAR
+export const NavWrapper = styled.nav`
+  display: grid;
+  grid-template-columns: auto auto 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: #b9b5b5;
+  
+  h4 {
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
+  img {
+    width: 35px;
+    height: 35px; 
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  button {
+    background: transparent;
+    border: transparent;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    letter-spacing: auto;
+    color: grey;
+    cursor: pointer;
+  }
+`
