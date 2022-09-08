@@ -41,17 +41,16 @@ export const LoginWrapper = styled.section`
     );
     border-radius: 5px;
     color: black;
-    box-shadow: 0 0 10px #eee;
     border-radius: $border-rounded;
     padding: 1em 3em;
     background-size: 200% auto;
     color: white;
-    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 4px 15px 0px;
     background-image: linear-gradient(
       to right,
       #364ff4 0%,
-      #caabff 50%,
-      #895cf2 100%
+      #ded4f0 50%,
+      #364ff4 100%
     );
     transition: 0.5s;
     &:hover {
