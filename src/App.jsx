@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import ErrorPage from './pages/ErrorPage';
 const App = () => {
-
+  
   return (
     <div className="App">
       <Router>
