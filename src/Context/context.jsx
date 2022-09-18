@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import staticUser from './staticData.jsx/staticUser';
-import staticFollowers from './staticData.jsx/staticFollowers';
-import staticRepos from './staticData.jsx/staticRepos';
+import staticUser from './staticData/staticUser';
+import staticFollowers from './staticData/staticFollowers';
+import staticRepos from './staticData/staticRepos';
 
 const rootUrl = 'https://api.github';
 

@@ -109,4 +109,54 @@ export const NavWrapper = styled.nav`
     color: grey;
     cursor: pointer;
   }
-`
+`;
+
+
+export const UserInfoWrapper = styled.section`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem 2rem;
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+  .item {
+    border-radius: var(--radius);
+    padding: 1rem 2rem;
+    background: var(--clr-white);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 3rem;
+    align-items: center;
+    span {
+      width: 3rem;
+      height: 3rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+    }
+    .icon {
+      font-size: 1.5rem;
+    }
+    h3 {
+      margin-bottom: 0;
+      letter-spacing: 0;
+    }
+    p {
+      margin-bottom: 0;
+      text-transform: capitalize;
+    }
+    .blue {
+      background: #7c91f6;
+      color: #473dd8;
+    }
+    .green {
+      background: #70b69b;
+      color: #0d774e;
+    }
+    .purple {
+      background: #ce9ef1;
+      color: #5d2188;
+    }
+  }
+
+`;

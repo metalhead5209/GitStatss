@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import {LoginWrapper} from '../Wrappers';
 import LoginImg from '../assets/login-img.jpg';
 
