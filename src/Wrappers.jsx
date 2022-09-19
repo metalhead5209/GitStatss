@@ -114,18 +114,18 @@ export const NavWrapper = styled.nav`
 
 export const UserInfoWrapper = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem 2rem;
+  grid-template-columns: repeat(autofill, minmax(200px, 1fr));
+  gap: 1rem 4rem;
   @media (min-width: 640px) {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  }
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));  }
   .item {
-    border-radius: var(--radius);
+    text-align: center;
+    border-radius: 10px;
     padding: 1rem 2rem;
-    background: var(--clr-white);
+    background: rgba(255,255,255, 0.2);
     display: grid;
     grid-template-columns: auto 1fr;
-    column-gap: 3rem;
     align-items: center;
     span {
       width: 3rem;
@@ -138,10 +138,12 @@ export const UserInfoWrapper = styled.section`
       font-size: 1.5rem;
     }
     h3 {
+      font-size: 2em;
       margin-bottom: 0;
       letter-spacing: 0;
     }
     p {
+      font-size: 1.2em;
       margin-bottom: 0;
       text-transform: capitalize;
     }

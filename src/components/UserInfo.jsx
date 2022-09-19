@@ -7,14 +7,14 @@ import { MdContacts } from "react-icons/md";
 
 const UserInfo = () => {
   const { githubUser } = React.useContext(GitContext);
-  const { repos, followers, following } = githubUser;
+  const { repositories, followers, following } = githubUser;
 
   const cards = [
     {
       id: 1,
       icon: <RiGitRepositoryFill className="icon" />,
       label: "Repos",
-      value: repos,
+      value: repositories,
       color: 'blue',
     },
     {
