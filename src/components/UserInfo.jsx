@@ -34,13 +34,13 @@ const UserInfo = () => {
   ];
 
   const Item = ({icon, label, value, color}) => {
-    return <article className="item">
+    return <div className="item">
         <span className={color}>{icon}</span>
         <div>
             <h3>{value}</h3>
             <p>{label}</p>
         </div>
-    </article>
+    </div>
   }
 
   console.log(repositories, followers, following)
