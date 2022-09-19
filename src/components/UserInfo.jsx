@@ -14,7 +14,7 @@ const UserInfo = () => {
       id: 1,
       icon: <RiGitRepositoryFill className="icon" />,
       label: "Repos",
-      value: repositories,
+      value: repositories || 35,
       color: 'blue',
     },
     {
@@ -42,6 +42,8 @@ const UserInfo = () => {
         </div>
     </article>
   }
+
+  console.log(repositories, followers, following)
 
   return (
     <section className="global-section">
