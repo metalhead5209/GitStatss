@@ -171,3 +171,84 @@ export const UserWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
   }
 `
+
+export const UserCardWrapper = styled.article`
+  background: rgba(255,255,255, 0.2);
+  padding: 1.5rem 2rem;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  &::before {
+    content: 'user';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background: rgba(255,255,255, 0.2);
+    color: #aaaaaa;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem 0 1rem;
+    letter-spacing: 5px;
+    font-size: 1rem;
+  }
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 1rem;
+    img {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+    }
+    h4 {
+      margin-bottom: 0.25rem;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    a {
+      color: white;
+      border: 1px solid red;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      text-transform: capitalize;
+      letter-spacing: 5px;
+      transition: all 0.3s linear;
+      cursor: pointer;
+      &:hover {
+        background: rgba(255,255,255, 0.2);
+        color: white;
+      }
+    }
+  }
+  .bio {
+    color: grey;
+  }
+  .links {
+    p,
+    a {
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      svg {
+        margin-right: 0.5rem;
+        font-size: 1.3rem;
+      }
+    }
+    a {
+      color: white;
+      transition: all 0.3s linear;
+      svg {
+        color: white;
+      }
+      &:hover {
+        color: rgba(255,255,255, 0.2);
+      }
+    }
+  }
+`
