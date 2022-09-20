@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { GitContext } from '../Context/context';
+import { UserCardWrapper } from '../Wrappers';
 
 const ProfileCard = () => {
   return (
-    <h2>Card Component</h2>
+    <UserCardWrapper>
+        <h2>Card Component</h2>
+    </UserCardWrapper>
+    
   )
 }
 

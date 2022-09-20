@@ -41,7 +41,7 @@ export const LoginWrapper = styled.section`
     );
     border-radius: 5px;
     color: black;
-    border-radius: $border-rounded;
+    border-radius: 10px;
     padding: 1em 3em;
     background-size: 200% auto;
     color: white;
@@ -121,7 +121,7 @@ export const UserInfoWrapper = styled.section`
     grid-template-columns: repeat(3, minmax(100px, 1fr));  }
   .item {
     text-align: center;
-    border-radius: 10px;
+    border-radius: 10em 20px 10em;
     padding: 1rem 2rem;
     background: rgba(255,255,255, 0.2);
     display: grid;
@@ -167,7 +167,7 @@ export const UserWrapper = styled.div`
   padding-top: 2rem;
   display: grid;
   gap: 3rem 2rem;
-  @media (mix-width: 992px) {
+  @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
   }
 `
@@ -175,9 +175,9 @@ export const UserWrapper = styled.div`
 export const UserCardWrapper = styled.article`
   background: rgba(255,255,255, 0.2);
   padding: 1.5rem 2rem;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 10em;
+  border-top-right-radius: 10em;
   position: relative;
   &::before {
     content: 'user';
@@ -249,6 +249,61 @@ export const UserCardWrapper = styled.article`
       &:hover {
         color: rgba(255,255,255, 0.2);
       }
+    }
+  }
+`;
+
+export const FollowersWrapper = styled.article`
+  background: rgba(255,255,255,0.2);;
+  /* border-top-right-radius: 10px; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10em;
+  border-top-left-radius: 10em;
+  padding: 1.5rem 2rem;
+  position: relative;
+  &::before {
+    content: ' followers';
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    background: rgba(255,255,255,0.2);
+    color: #d1d1d1;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem 0 1rem;
+    letter-spacing: 5px;
+    font-size: 1rem;
+  }
+  .followers {
+    overflow: scroll;
+    height: 260px;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(45px, 1fr));
+    gap: 1.25rem 1rem;
+    padding: 1rem 2rem;
+  }
+  article {
+    transition: all 0.2s linear;
+    padding: 0.15rem 0.5rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 1rem;
+    img {
+      height: 100%;
+      width: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    h2 {
+      margin-bottom: 0;
+    }
+    a {
+      color: rgba(255,255,255,0.2);;
     }
   }
 `
