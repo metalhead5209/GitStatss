@@ -17,6 +17,9 @@ const ProfileCard = () => {
         </div>
         <a target="_blank" href={html_url}>Follow</a>
       </header>
+      <div className="profile-info">
+      <p className="bio">{bio || 'Github User'}</p>
+      </div>
     </UserCardWrapper>
     
   )

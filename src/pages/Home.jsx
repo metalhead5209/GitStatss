@@ -8,9 +8,9 @@ import { ErrorWrapper } from "../Wrappers";
 const Home = () => {
   return (
     <>
-      <NavBar />
-      <UserData />
-      <User />
+        <NavBar />
+        <UserData />
+        <User />
     </>
   );
 };

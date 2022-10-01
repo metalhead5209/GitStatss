@@ -116,7 +116,7 @@ export const UserDataWrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(autofill, minmax(200px, 1fr));
   gap: 1rem 4rem;
-  @media (min-width: 640px) {
+  @media (min-width: 840px) {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));  }
   .item {
@@ -179,6 +179,7 @@ export const UserCardWrapper = styled.article`
   border-bottom-left-radius: 10em;
   border-top-right-radius: 10em;
   position: relative;
+  height: 15em;
   &::before {
     content: 'user';
     position: absolute;
@@ -196,13 +197,13 @@ export const UserCardWrapper = styled.article`
   }
   header {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr 1fr;
     align-items: center;
     column-gap: 1rem;
     margin-bottom: 1rem;
     img {
-      width: 75px;
-      height: 75px;
+      width: 65px;
+      height: 65px;
       border-radius: 50%;
     }
     h4 {
@@ -212,15 +213,13 @@ export const UserCardWrapper = styled.article`
       margin-bottom: 0;
     }
     a {
+      max-width: 5.5em;
       color: white;
       border: 1px solid white;
-      border-top-left-radius: 5em;
-      border-bottom-left-radius: 5em;
-      border-top-right-radius: 10em;
+      border-radius: 5em 5em 5em;
       padding: 0.25rem 0.75rem;
-      /* border-radius: 1rem; */
       text-transform: capitalize;
-      letter-spacing: 5px;
+      letter-spacing: 3px;
       transition: all 0.3s linear;
       cursor: pointer;
       &:hover {
@@ -228,6 +227,13 @@ export const UserCardWrapper = styled.article`
         color: black;
         border: 1px solid black;
       }
+    }
+    /* .profile-info .bio {
+      position: absolute;
+      left: 20px;
+    } */
+    @media screen and (max-width: 600px) {
+      
     }
   }
   .bio {
