@@ -179,7 +179,7 @@ export const UserCardWrapper = styled.article`
   border-bottom-left-radius: 10em;
   border-top-right-radius: 10em;
   position: relative;
-  height: 15em;
+  height: 14em;
   &::before {
     content: 'user';
     position: absolute;
@@ -213,13 +213,13 @@ export const UserCardWrapper = styled.article`
       margin-bottom: 0;
     }
     a {
-      max-width: 5.5em;
+      max-width: 6.3em;
       color: white;
-      border: 1px solid white;
+      border: 2px solid white;
       border-radius: 5em 5em 5em;
-      padding: 0.25rem 0.75rem;
+      padding: 0.5rem 0.8rem;
       text-transform: capitalize;
-      letter-spacing: 3px;
+      letter-spacing: 5px;
       transition: all 0.3s linear;
       cursor: pointer;
       &:hover {
@@ -228,23 +228,29 @@ export const UserCardWrapper = styled.article`
         border: 1px solid black;
       }
     }
-    /* .profile-info .bio {
-      position: absolute;
-      left: 20px;
-    } */
+ 
     @media screen and (max-width: 600px) {
-      
+      a {
+        font-size: .7em;
+        padding: 0.35rem 0.3rem;
+      }
     }
   }
   .bio {
     color: grey;
   }
   .links {
+    position: relative;
+    left: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    left: 0px;
     p,
     a {
       margin-bottom: 0.25rem;
       display: flex;
       align-items: center;
+      
       svg {
         margin-right: 0.5rem;
         font-size: 1.3rem;
@@ -259,8 +265,18 @@ export const UserCardWrapper = styled.article`
       &:hover {
         color: rgba(255,255,255, 0.2);
       }
+      
     }
   }
+  @media screen and (max-width: 600px) {
+      .links {
+        display: block;
+        left: 55px;
+      }
+      height: 16em;
+      
+    }
+ 
 `;
 
 export const FollowersWrapper = styled.article`

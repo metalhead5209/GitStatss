@@ -21,7 +21,7 @@ export default {
     "company": null,
     "blog": "http://aaron-rodi.netlify.app/",
     "location": "Lafayette, LA",
-    "email": null,
+    "email": 'metalhead5209@gmail.com',
     "hireable": null,
     "bio": null,
     "twitter_username": "a_wodi",
