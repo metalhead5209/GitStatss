@@ -5,7 +5,7 @@ import { NavWrapper } from "../Wrappers";
 
 const NavBar = () => {
   const data = React.useContext(GitContext);
-  console.log(data);
+  // console.log(data);
   return <NavWrapper></NavWrapper>;
 };
 

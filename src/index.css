@@ -11,6 +11,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
+
+
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
@@ -84,6 +86,16 @@ meter {
 /* apply back the draggable feature - exist only in Chromium and Safari */
 :where([draggable="true"]) {
   -webkit-user-drag: element;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+body::-webkit-scrollbar-thumb {
+  background: #ffffff;
 }
 
 
