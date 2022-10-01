@@ -1,11 +1,11 @@
 import React from "react";
 import { GitContext } from "../Context/context";
-import { UserInfoWrapper } from "../Wrappers";
+import { UserDataWrapper } from "../Wrappers";
 import { RiGitRepositoryFill } from "react-icons/ri";
 import { FaUserFriends } from "react-icons/fa"; /* followers */
 import { MdContacts } from "react-icons/md";
 
-const UserInfo = () => {
+const UserData = () => {
   const { githubUser } = React.useContext(GitContext);
   const { repositories, followers, following } = githubUser;
 
@@ -47,13 +47,13 @@ const UserInfo = () => {
 
   return (
     <section className="global-section">
-      <UserInfoWrapper className="global-sec-center">
+      <UserDataWrapper className="global-sec-center">
         {cards.map((card) => {
             return <Item key={card.id} {...card}></Item>
         })}
-      </UserInfoWrapper>
+      </UserDataWrapper>
     </section>
   );
 };
 
-export default UserInfo;
+export default UserData;

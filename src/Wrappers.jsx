@@ -112,7 +112,7 @@ export const NavWrapper = styled.nav`
 `;
 
 
-export const UserInfoWrapper = styled.section`
+export const UserDataWrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(autofill, minmax(200px, 1fr));
   gap: 1rem 4rem;
@@ -213,16 +213,20 @@ export const UserCardWrapper = styled.article`
     }
     a {
       color: white;
-      border: 1px solid red;
+      border: 1px solid white;
+      border-top-left-radius: 5em;
+      border-bottom-left-radius: 5em;
+      border-top-right-radius: 10em;
       padding: 0.25rem 0.75rem;
-      border-radius: 1rem;
+      /* border-radius: 1rem; */
       text-transform: capitalize;
       letter-spacing: 5px;
       transition: all 0.3s linear;
       cursor: pointer;
       &:hover {
-        background: rgba(255,255,255, 0.2);
-        color: white;
+        background: #ffffffcd;
+        color: black;
+        border: 1px solid black;
       }
     }
   }

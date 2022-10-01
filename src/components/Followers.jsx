@@ -6,7 +6,6 @@ import { FollowersWrapper } from '../Wrappers';
 const Followers = () => {
   return (
     <FollowersWrapper>
-        <h2>Followers</h2>
     </FollowersWrapper>
   )
 }

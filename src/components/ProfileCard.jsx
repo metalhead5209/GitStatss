@@ -4,9 +4,19 @@ import { GitContext } from '../Context/context';
 import { UserCardWrapper } from '../Wrappers';
 
 const ProfileCard = () => {
+
+  const {githubUser} = React.useContext(GitContext);
+  const {avatar_url, html_url, name, company, blog, bio, location, twitter_username} = githubUser;
   return (
     <UserCardWrapper>
-        <h2>Card Component</h2>
+      <header>
+        <img src={avatar_url} alt={name} />
+        <div>
+          <h4>{name}</h4>
+          <p>@{twitter_username || ''}</p>
+        </div>
+        <a target="_blank" href={html_url}>Follow</a>
+      </header>
     </UserCardWrapper>
     
   )
