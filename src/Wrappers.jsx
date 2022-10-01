@@ -332,7 +332,7 @@ export const FollowersWrapper = styled.article`
     }
     a {
       color: rgba(240, 240, 240, 0.888);
-      width: auto;
+      width: 5em;
     }
     a:hover {
       filter: drop-shadow(5px 7px 10px rgb(255, 255, 255));
@@ -341,6 +341,9 @@ export const FollowersWrapper = styled.article`
   @media screen and (max-width: 600px) {
     .followers {
       height: 200px;
+      a {
+        font-size: .7em;
+      }
     }
     max-height: 15em;
     
