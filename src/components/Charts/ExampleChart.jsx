@@ -20,43 +20,27 @@ ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 // STEP 2 - Chart Data
 const chartData = [
   {
-    label: "Venezuela",
+    label: "HTML",
     value: "290"
   },
   {
-    label: "Saudi",
+    label: "CSS",
     value: "260"
   },
   {
-    label: "Canada",
+    label: "JavsScript",
     value: "180"
   },
   {
-    label: "Iran",
+    label: "TypeScript",
     value: "140"
-  },
-  {
-    label: "Russia",
-    value: "115"
-  },
-  {
-    label: "UAE",
-    value: "100"
-  },
-  {
-    label: "US",
-    value: "30"
-  },
-  {
-    label: "China",
-    value: "30"
   }
 ];
 
 // STEP 3 - Creating the JSON object to store the chart configurations
 const chartConfigs = {
   type: "column2d", // The chart type
-  width: "700", // Width of the chart
+  width: "400", // Width of the chart
   height: "400", // Height of the chart
   dataFormat: "json", // Data type
   dataSource: {
