@@ -7,7 +7,7 @@ const RepoStats = () => {
     const { githubRepos } = React.useContext(GitContext);
     console.log(githubRepos);
   return (
-    <RepoStatsWrapper>
+    <RepoStatsWrapper className='global-section'>
         <ExampleChart />
     </RepoStatsWrapper>
   )

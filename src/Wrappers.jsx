@@ -118,7 +118,7 @@ export const UserDataWrapper = styled.section`
   }
   .item {
     text-align: center;
-    border-radius: 10em 20px 10em;
+    border-radius: 1.5em;
     padding: 1rem 2rem;
     background: rgba(255, 255, 255, 0.2);
     display: grid;
@@ -161,6 +161,7 @@ export const UserDataWrapper = styled.section`
 
 export const UserWrapper = styled.div`
   padding-top: 2rem;
+  margin-bottom: 1.5em;
   display: grid;
   gap: 3rem 2rem;
   @media (min-width: 992px) {
@@ -171,9 +172,9 @@ export const UserWrapper = styled.div`
 export const UserCardWrapper = styled.article`
   background: rgba(255, 255, 255, 0.2);
   padding: 1.5rem 2rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 10em;
-  border-top-right-radius: 10em;
+  border-bottom-right-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+  border-bottom-left-radius: 1.5em;
   position: relative;
   height: 14em;
   &::before {
@@ -273,8 +274,9 @@ export const UserCardWrapper = styled.article`
 
 export const FollowersWrapper = styled.article`
   background: rgba(255, 255, 255, 0.2);
-  border-bottom-right-radius: 10em;
-  border-top-left-radius: 10em;
+  border-bottom-right-radius: 1.5em;
+  border-top-left-radius: 1.5em;
+  border-bottom-left-radius: 1.5em;
   padding: 1.5rem 2rem;
   position: relative;
   max-height: 14em;
