@@ -354,14 +354,15 @@ export const FollowersWrapper = styled.article`
 
 export const RepoStatsWrapper = styled.div`
    display: grid;
+   /* grid-template-columns: 2fr 3fr; */
   justify-items: center;
   gap: 2rem;
-  @media (min-width: 800px) {
+  @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
   }
-  @media (min-width: 1200px) {
+  /* @media (min-width: 900px) {
     grid-template-columns: 2fr 3fr;
-  }
+  } */
   div {
     width: 100% !important;
   }
