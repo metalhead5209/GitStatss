@@ -120,7 +120,7 @@ export const UserDataWrapper = styled.section`
     text-align: center;
     border-radius: 1.5em;
     padding: 1rem 2rem;
-    background: rgba(255, 255, 255, 0.2);
+    background: #262a32;
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
@@ -170,7 +170,7 @@ export const UserWrapper = styled.div`
 `;
 
 export const UserCardWrapper = styled.article`
-  background: rgba(255, 255, 255, 0.2);
+  background: #262a32;
   padding: 1.5rem 2rem;
   border-bottom-right-radius: 1.5em;
   border-top-right-radius: 1.5em;
@@ -183,7 +183,7 @@ export const UserCardWrapper = styled.article`
     top: 0;
     left: 0;
     transform: translateY(-100%);
-    background: rgba(255, 255, 255, 0.2);
+    background: #262a32;
     color: #aaaaaa;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -273,7 +273,7 @@ export const UserCardWrapper = styled.article`
 `;
 
 export const FollowersWrapper = styled.article`
-  background: rgba(255, 255, 255, 0.2);
+  background: #262a32;
   border-bottom-right-radius: 1.5em;
   border-top-left-radius: 1.5em;
   border-bottom-left-radius: 1.5em;
@@ -286,7 +286,7 @@ export const FollowersWrapper = styled.article`
     top: 0;
     right: 0;
     transform: translateY(-100%);
-    background: rgba(255, 255, 255, 0.2);
+    background: #3c414db8;
     color: #d1d1d1;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;

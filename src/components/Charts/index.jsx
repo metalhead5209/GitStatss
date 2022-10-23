@@ -1,4 +1,4 @@
-import ExampleChart from './ExampleChart';
+import PieChart from './PieChart';
 
 
-export { ExampleChart };
+export { PieChart };

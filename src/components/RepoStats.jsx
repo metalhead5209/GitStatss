@@ -1,7 +1,7 @@
 import React from 'react';
 import { RepoStatsWrapper } from '../Wrappers';
 import { GitContext } from '../Context/context';
-import { ExampleChart } from './Charts';
+import { PieChart } from './Charts';
 
 const RepoStats = () => {
     const { githubRepos } = React.useContext(GitContext);
@@ -28,10 +28,10 @@ const RepoStats = () => {
 
   return (
     <RepoStatsWrapper className='global-section'>
-        <ExampleChart data={chartData} />
-        <ExampleChart data={chartData} />
-        <ExampleChart data={chartData} />
-        <ExampleChart data={chartData} />
+        <PieChart data={chartData} />
+        <PieChart data={chartData} />
+        <PieChart data={chartData} />
+        <PieChart data={chartData} />
     </RepoStatsWrapper>
   )
 }
