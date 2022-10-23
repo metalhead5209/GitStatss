@@ -43,7 +43,7 @@ const UserData = () => {
     </div>
   }
 
-  console.log(repositories, followers, following)
+  
 
   return (
     <section className="global-section">

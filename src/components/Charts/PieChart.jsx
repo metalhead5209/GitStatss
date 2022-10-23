@@ -9,20 +9,17 @@ import ReactFC from "react-fusioncharts";
 import FusionCharts from "fusioncharts";
 
 // Include the chart type
-import Column2D from "fusioncharts/fusioncharts.charts";
+import Pie3D from "fusioncharts/fusioncharts.charts";
 
 // Include the theme as fusion
-import FusionTheme from "fusioncharts/themes/fusioncharts.theme.candy";
+import CandyTheme from "fusioncharts/themes/fusioncharts.theme.candy";
 
 // Adding the chart and theme as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
-
-
+ReactFC.fcRoot(FusionCharts, Pie3D, CandyTheme);
 
 // STEP 3 - Creating the JSON object to store the chart configurations
 
-
-const ChartComponent = ({data}) => {
+const PieChartComponent = ({ data }) => {
   const chartConfigs = {
     type: "pie3d", // The chart type
     width: "100%", // Width of the chart
@@ -32,24 +29,14 @@ const ChartComponent = ({data}) => {
       // Chart Configuration
       chart: {
         //Set the chart caption
-        caption: "Most used languages",
-        //Set the chart subcaption
-        subCaption: "HEY HEY HEY",
-        //Set the x-axis name
-        xAxisName: "Country",
-        //Set the y-axis name
-        yAxisName: "Reserves (MMbbl)",
-        numberSuffix: "K",
-        //Set the theme for your chart
-        theme: "candy"
+        caption: "Top 5 Languages",
+        theme: "candy",
       },
       // Chart Data
-      data
-    }
+      data,
+    },
   };
-    return <ReactFC {...chartConfigs} />
+  return <ReactFC {...chartConfigs} />;
 };
 
-
-
-export default ChartComponent;
+export default PieChartComponent;
