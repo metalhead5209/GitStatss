@@ -17,53 +17,36 @@ import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 // Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
-// STEP 2 - Chart Data
-const chartData = [
-  {
-    label: "HTML",
-    value: "290"
-  },
-  {
-    label: "CSS",
-    value: "260"
-  },
-  {
-    label: "JavsScript",
-    value: "180"
-  },
-  {
-    label: "TypeScript",
-    value: "140"
-  }
-];
+
 
 // STEP 3 - Creating the JSON object to store the chart configurations
-const chartConfigs = {
-  type: "column2d", // The chart type
-  width: "400", // Width of the chart
-  height: "400", // Height of the chart
-  dataFormat: "json", // Data type
-  dataSource: {
-    // Chart Configuration
-    chart: {
-      //Set the chart caption
-      caption: "Countries With Most Oil Reserves [2017-18]",
-      //Set the chart subcaption
-      subCaption: "In MMbbl = One Million barrels",
-      //Set the x-axis name
-      xAxisName: "Country",
-      //Set the y-axis name
-      yAxisName: "Reserves (MMbbl)",
-      numberSuffix: "K",
-      //Set the theme for your chart
-      theme: "fusion"
-    },
-    // Chart Data
-    data: chartData
-  }
-};
 
-const ChartComponent = () => {
+
+const ChartComponent = ({data}) => {
+  const chartConfigs = {
+    type: "column3d", // The chart type
+    width: "100%", // Width of the chart
+    height: "400", // Height of the chart
+    dataFormat: "json", // Data type
+    dataSource: {
+      // Chart Configuration
+      chart: {
+        //Set the chart caption
+        caption: "Most used languages",
+        //Set the chart subcaption
+        subCaption: "HEY HEY HEY",
+        //Set the x-axis name
+        xAxisName: "Country",
+        //Set the y-axis name
+        yAxisName: "Reserves (MMbbl)",
+        numberSuffix: "K",
+        //Set the theme for your chart
+        theme: "fusion"
+      },
+      // Chart Data
+      data
+    }
+  };
     return <ReactFC {...chartConfigs} />
 };
 

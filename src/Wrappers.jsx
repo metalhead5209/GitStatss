@@ -354,15 +354,12 @@ export const FollowersWrapper = styled.article`
 
 export const RepoStatsWrapper = styled.div`
    display: grid;
-   /* grid-template-columns: 2fr 3fr; */
+   grid-template-columns: 1fr 1.5fr;
   justify-items: center;
   gap: 2rem;
-  @media (min-width: 992px) {
-    grid-template-columns: 1fr 1fr;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
   }
-  /* @media (min-width: 900px) {
-    grid-template-columns: 2fr 3fr;
-  } */
   div {
     width: 100% !important;
   }
@@ -371,7 +368,7 @@ export const RepoStatsWrapper = styled.div`
   }
   svg {
     width: 100% !important;
-    border-radius: 5px !important;
+    border-radius: 1.5rem !important;
   }
 
 `

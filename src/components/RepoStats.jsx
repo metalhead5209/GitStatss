@@ -6,9 +6,32 @@ import { ExampleChart } from './Charts';
 const RepoStats = () => {
     const { githubRepos } = React.useContext(GitContext);
     console.log(githubRepos);
+
+    const chartData = [
+      {
+        label: "HTML",
+        value: "290"
+      },
+      {
+        label: "CSS",
+        value: "260"
+      },
+      {
+        label: "JavsScript",
+        value: "180"
+      },
+      {
+        label: "TypeScript",
+        value: "140"
+      }
+    ];
+
   return (
     <RepoStatsWrapper className='global-section'>
-        <ExampleChart />
+        <ExampleChart data={chartData} />
+        <ExampleChart data={chartData} />
+        <ExampleChart data={chartData} />
+        <ExampleChart data={chartData} />
     </RepoStatsWrapper>
   )
 }
