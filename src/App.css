@@ -65,7 +65,7 @@
 
 @media screen and (max-width: 800px) {
     .global-section {
-        margin: auto;
+        margin: auto 1em;
     }
 }
 

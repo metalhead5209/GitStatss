@@ -346,6 +346,9 @@ export const FollowersWrapper = styled.article`
       a {
         font-size: .7em;
       }
+      h4 {
+        font-size: 1em;
+      }
     }
     max-height: 15em;
     
