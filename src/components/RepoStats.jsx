@@ -1,5 +1,5 @@
 import React from "react";
-import { RepoStatsWrapper } from "../Wrappers";
+import { RepoStatsWrapper, RepoStatsWrapperB } from "../Wrappers";
 import { GitContext } from "../Context/context";
 import { PieChart, DonutChart } from "./Charts";
 
@@ -37,15 +37,17 @@ const RepoStats = () => {
     }).slice(0,5) 
     
   return (
+    <>
     <RepoStatsWrapper className="global-section">
-      <div></div>
-      {/* <PieChart data={mostUsedLanguages} /> */}
       <PieChart data={most} />
-      <div></div>
-      {/* <PieChart data={mostUsedLanguages} /> */}
-      <DonutChart data={mostStars} />
-      
+      <PieChart data={most} />
     </RepoStatsWrapper>
+    <RepoStatsWrapperB className="global-section">
+      <PieChart data={most} />
+      <DonutChart data={mostStars} />
+    </RepoStatsWrapperB>
+    </>
+    
   );
 };
 

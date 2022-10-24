@@ -357,6 +357,27 @@ export const FollowersWrapper = styled.article`
 
 export const RepoStatsWrapper = styled.div`
    display: grid;
+   grid-template-columns: 1fr 1.5fr;
+  justify-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+  div {
+    width: 100% !important;
+  }
+  .fusioncharts-container {
+    width: 100% !important;
+  }
+  svg {
+    width: 100% !important;
+    border-radius: 1.5rem !important;
+  }
+
+`
+export const RepoStatsWrapperB = styled.div`
+   display: grid;
    grid-template-columns: 1.5fr 1fr;
   justify-items: center;
   gap: 2rem;
