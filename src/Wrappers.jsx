@@ -357,7 +357,7 @@ export const FollowersWrapper = styled.article`
 
 export const RepoStatsWrapper = styled.div`
    display: grid;
-   grid-template-columns: 1fr 1.5fr;
+   grid-template-columns: 1.5fr 1fr;
   justify-items: center;
   gap: 2rem;
   @media (max-width: 900px) {

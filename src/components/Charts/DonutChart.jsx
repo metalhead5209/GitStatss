@@ -9,19 +9,19 @@ import ReactFC from "react-fusioncharts";
 import FusionCharts from "fusioncharts";
 
 // Include the chart type
-import Pie3D from "fusioncharts/fusioncharts.charts";
+import Donut3d from "fusioncharts/fusioncharts.charts";
 
 // Include the theme as fusion
 import CandyTheme from "fusioncharts/themes/fusioncharts.theme.candy";
 
 // Adding the chart and theme as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Pie3D, CandyTheme);
+ReactFC.fcRoot(FusionCharts, Donut3d, CandyTheme);
 
 // STEP 3 - Creating the JSON object to store the chart configurations
 
-const PieChartComponent = ({ data }) => {
+const DonutChartComponent = ({ data }) => {
   const chartConfigs = {
-    type: "pie3d", // The chart type
+    type: "doughnut3d", // The chart type
     width: "100%", // Width of the chart
     height: "400", // Height of the chart
     dataFormat: "json", // Data type
@@ -29,10 +29,13 @@ const PieChartComponent = ({ data }) => {
       // Chart Configuration
       chart: {
         //Set the chart caption
-        caption: "Top 5 Languages",
+        caption: "Starred Languages",
+        subcaption: "Stars Per Language",
         theme: "candy",
         showBorder: 0,
         decimals: 0,
+        doughnutRadius: '70%',
+        showPercentValues: 0,
         
       },
       // Chart Data
@@ -42,4 +45,4 @@ const PieChartComponent = ({ data }) => {
   return <ReactFC {...chartConfigs} />;
 };
 
-export default PieChartComponent;
+export default DonutChartComponent;
