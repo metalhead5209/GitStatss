@@ -29,7 +29,7 @@ const DonutChartComponent = ({ data }) => {
       // Chart Configuration
       chart: {
         //Set the chart caption
-        caption: "Starred Languages",
+        caption: "Top 5 Starred Languages",
         subcaption: "Displays top 5 languagues based on the number of stars received.",
         theme: "candy",
         showBorder: 0,

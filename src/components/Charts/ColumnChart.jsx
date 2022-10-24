@@ -29,8 +29,12 @@ const ColumnChartComponent = ({ data }) => {
       // Chart Configuration
       chart: {
         //Set the chart caption
-        caption: "Starred Repos",
+        caption: "Top 5 Starred Repos",
         subcaption: "Displays top 5 Repositories based on the number of stars received",
+        yAxisName: 'Stars',
+        xAxisName: 'Repos',
+        XaxisFontSize: '16px',
+        YaxisFontSize: '16px',
         theme: "candy",
         showBorder: 0,
         decimals: 0,

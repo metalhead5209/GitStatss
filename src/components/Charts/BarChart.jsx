@@ -29,8 +29,12 @@ const BarChartComponent = ({ data }) => {
       // Chart Configuration
       chart: {
         //Set the chart caption
-        caption: "Starred Repos",
-        subcaption: "Displays top 5 Repositories based on the number of stars received",
+        caption: "Top 5 Forked Repos",
+        subcaption: "Displays top 5 Repositories based on the number of forks received",
+        yAxisName: 'Forks',
+        xAxisName: 'Repos',
+        XaxisFontSize: '16px',
+        YaxisFontSize: '16px',
         theme: "candy",
         showBorder: 0,
         decimals: 0,
