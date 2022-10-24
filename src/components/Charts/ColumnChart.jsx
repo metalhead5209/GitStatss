@@ -9,19 +9,19 @@ import ReactFC from "react-fusioncharts";
 import FusionCharts from "fusioncharts";
 
 // Include the chart type
-import Donut3d from "fusioncharts/fusioncharts.charts";
+import Column3d from "fusioncharts/fusioncharts.charts";
 
 // Include the theme as fusion
 import CandyTheme from "fusioncharts/themes/fusioncharts.theme.candy";
 
 // Adding the chart and theme as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Donut3d, CandyTheme);
+ReactFC.fcRoot(FusionCharts, Column3d, CandyTheme);
 
 // STEP 3 - Creating the JSON object to store the chart configurations
 
-const DonutChartComponent = ({ data }) => {
+const ColumnChartComponent = ({ data }) => {
   const chartConfigs = {
-    type: "doughnut3d", // The chart type
+    type: "column3d", // The chart type
     width: "100%", // Width of the chart
     height: "400", // Height of the chart
     dataFormat: "json", // Data type
@@ -29,12 +29,11 @@ const DonutChartComponent = ({ data }) => {
       // Chart Configuration
       chart: {
         //Set the chart caption
-        caption: "Starred Languages",
-        subcaption: "Displays top 5 languagues based on the number of stars received.",
+        caption: "Starred Repos",
+        subcaption: "Displays top 5 Repositories based on the number of stars received",
         theme: "candy",
         showBorder: 0,
         decimals: 0,
-        doughnutRadius: '60%',
         showPercentValues: 0,
         
       },
@@ -45,4 +44,4 @@ const DonutChartComponent = ({ data }) => {
   return <ReactFC {...chartConfigs} />;
 };
 
-export default DonutChartComponent;
+export default ColumnChartComponent;

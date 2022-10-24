@@ -30,6 +30,7 @@ const PieChartComponent = ({ data }) => {
       chart: {
         //Set the chart caption
         caption: "Top 5 Languages",
+        subCaption: "Displays top 5 most used languages",
         theme: "candy",
         showBorder: 0,
         decimals: 0,
