@@ -399,8 +399,11 @@ export const RepoStatsWrapperB = styled.div`
 
 export const SearchBarWrapper = styled.div`
   position: relative;
+  background-color: #262a32;
   display: grid;
   gap: 1rem 1.75rem;
+  margin-bottom: 2em;
+  border-radius: 1.5em;
   @media (min-width: 768px) {
     grid-template-columns: 1fr max-content;
     align-items: center;
@@ -409,21 +412,24 @@ export const SearchBarWrapper = styled.div`
     }
   }
   .form-control {
-    background: white;
+    background-color: #262a32;
     display: grid;
     align-items: center;
     grid-template-columns: auto 1fr auto;
     column-gap: 0.5rem;
-    border-radius: 5px;
+    border-radius: 1.5em;
     padding: 0.5rem;
     input {
-      border-color: transparent;
-      outline-color: grey;
+      
+      background-color: #262a32;
+      border-color: white;
+      outline-color: white;
       letter-spacing: 2px;
-      color: grey;
+      color: white;
       padding: 0.25rem 0.5rem;
     }
     input::placeholder {
+      background-color: #262a32;
       color: grey;
       text-transform: capitalize;
       letter-spacing: 2px;
@@ -439,12 +445,13 @@ export const SearchBarWrapper = styled.div`
       transition: var(--transition);
       cursor: pointer;
       &:hover {
-        background: #262a32;
+        background: white;
         color: white;
       }
     }
     svg {
-      color: grey;
+      color: white;
+      width: 5em
     }
     input,
     button,
