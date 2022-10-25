@@ -12,6 +12,12 @@ const GitProvider = ({ children }) => {
   const [githubUser, setGithubUser] = useState(staticUser);
   const [githubFollowers, setGithubFollowers] = useState(staticFollowers);
   const [githubRepos, setGithubRepos] = useState(staticRepos);
+    // Load request
+    const [ loading, setIsLoading] = useState(false);
+    // Error Handling
+    useEffect(() => {
+      console.log('App Loaded')
+    }, []);
   return (
     <GitContext.Provider value={{ githubUser, githubFollowers, githubRepos }}>
       {children}

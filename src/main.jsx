@@ -5,9 +5,7 @@ import './index.css';
 import { GitProvider } from './Context/context';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <GitProvider>
     <App />
     </GitProvider>
-  </React.StrictMode>
 )
