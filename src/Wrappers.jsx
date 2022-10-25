@@ -435,18 +435,20 @@ export const SearchBarWrapper = styled.div`
       letter-spacing: 2px;
     }
     button {
-      border-radius: 5px;
-      border-color: transparent;
+      border-radius: 1.5em;
+      border: 1px solid white;
       padding: 0.25rem 0.5rem;
       text-transform: capitalize;
+      font-weight: bold;
       letter-spacing: 2px;
       background: #262a32;
       color: white;
       transition: var(--transition);
       cursor: pointer;
       &:hover {
-        background: white;
-        color: white;
+        background-color: #ffffffa8;
+        box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+        color: rgba(0,0,0,0.5);
       }
     }
     svg {

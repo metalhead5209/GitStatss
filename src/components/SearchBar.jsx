@@ -17,6 +17,7 @@ const SearchBar = () => {
                 <div className="form-control">
                     <FcSearch />
                     <input type='text' placeholder="enter username" />
+                    <button type='submit'>Submit</button>
                 </div>
             </form>
         </SearchBarWrapper>
