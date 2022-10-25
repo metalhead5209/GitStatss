@@ -8,7 +8,10 @@ import { SearchBarWrapper } from '../Wrappers';
 const SearchBar = () => {
     const [ user, setUser ] = useState('');
     const handleSubmit = (e) => {
-        console.log(user);
+        e.preventDefault();
+        if (user) {
+            
+        }
     }
   return (
     <section className='global-section'>
@@ -16,7 +19,7 @@ const SearchBar = () => {
             <form onSubmit={handleSubmit}>
                 <div className="form-control">
                     <FcSearch />
-                    <input type='text' placeholder="enter username" />
+                    <input type='text' placeholder="enter username" value={user} onChange={(e) => setUser(e.target.value)}/>
                     <button type='submit'>Submit</button>
                 </div>
             </form>

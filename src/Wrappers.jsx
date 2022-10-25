@@ -112,6 +112,7 @@ export const UserDataWrapper = styled.section`
   display: grid;
   grid-template-columns: repeat(autofill, minmax(200px, 1fr));
   gap: 1rem 4rem;
+  margin-bottom: 1em;
   @media (min-width: 840px) {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
@@ -437,12 +438,12 @@ export const SearchBarWrapper = styled.div`
     button {
       border-radius: 1.5em;
       border: 1px solid white;
-      padding: 0.25rem 0.5rem;
+      padding: 0.35rem 0.5rem;
       text-transform: capitalize;
-      font-weight: bold;
+      font-weight: 500;
       letter-spacing: 2px;
       background: #262a32;
-      color: white;
+      color: grey;
       transition: var(--transition);
       cursor: pointer;
       &:hover {
