@@ -440,7 +440,7 @@ export const SearchBarWrapper = styled.div`
       border: 1px solid white;
       padding: 0.35rem 0.5rem;
       text-transform: capitalize;
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: 2px;
       background: #262a32;
       color: grey;

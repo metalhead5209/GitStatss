@@ -12,8 +12,8 @@ const Home = () => {
     <>
         <NavBar />
         <SearchBar />
-        <UserData />
         <User />
+        <UserData />
         <RepoStats />
     </>
   );
