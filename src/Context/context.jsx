@@ -19,6 +19,7 @@ const GitProvider = ({ children }) => {
     // Searc Github user
     const searchGitUser = async(user) => {
       errMessage();
+      setLoading(true);
       const res = await axios(`${rootUrl}/users/${user}`).catch(err => console.log(err));
       console.log(res);
       if (res) {
@@ -27,6 +28,7 @@ const GitProvider = ({ children }) => {
       else {
         errMessage(true, "There is no user with that name");
       }
+      setLoading(false);
     };
 
     const errMessage = (show = false, msg = "") => {
