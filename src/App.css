@@ -45,6 +45,14 @@
 
 }
 
+.load {
+    text-align: center;
+}
+
+#loading {
+    width: 40em;
+}
+
 @media screen and (max-width:800px) {
     .err-container {
         width: 80%;

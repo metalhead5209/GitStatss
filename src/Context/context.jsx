@@ -13,7 +13,7 @@ const GitProvider = ({ children }) => {
   const [githubFollowers, setGithubFollowers] = useState(staticFollowers);
   const [githubRepos, setGithubRepos] = useState(staticRepos);
     // Load request
-    const [ loading, setIsLoading] = useState(false);
+    const [ loading, setLoading] = useState(false);
     const [ error, setError ] = useState({show:false, msg:""});
   
     // Searc Github user
@@ -47,7 +47,8 @@ const GitProvider = ({ children }) => {
       githubFollowers, 
       githubRepos, 
       searchGitUser,
-      error 
+      error,
+      loading 
       }}>
       {children}
     </GitContext.Provider>

@@ -7,7 +7,7 @@ import { SearchBarWrapper, SearchErrorWrapper } from '../Wrappers';
 
 const SearchBar = () => {
     const [ user, setUser ] = useState('');
-    const { error, searchGitUser } = useContext(GitContext);
+    const { error, searchGitUser, loading } = useContext(GitContext);
     // console.log(error);
 
     const handleSubmit = (e) => {
@@ -31,7 +31,8 @@ const SearchBar = () => {
                 <div className="form-control">
                     <FcSearch />
                     <input type='text' placeholder="enter username" value={user} onChange={(e) => setUser(e.target.value)}/>
-                    <button type='submit'>Submit</button>
+                    {!loading && <button type='submit'>Submit</button>}
+                    
                 </div>
             </form>
         </SearchBarWrapper>
