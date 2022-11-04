@@ -24,6 +24,13 @@ const GitProvider = ({ children }) => {
       console.log(res);
       if (res) {
         setGithubUser(res.data)
+        // logic for dynamic repo data
+        const {login, followers_url} = res.data;
+        axios(`${rootUrl}/users/${login}/repos?per_page=100`).
+        then(res => console.log(res))
+        // logic for dynamic follower data
+        axios(`${followers_url}?per_page=100`).
+        then(res => console.log(res))
       }
       else {
         errMessage(true, "There is no user with that name");

@@ -12,7 +12,7 @@ import Spinner from '../assets/Spinner-1s-200px.gif';
 const Home = () => {
   const { loading } = React.useContext(GitContext);
   if (loading) {
-    return <main class="load">
+    return <main className="load">
       <NavBar />
       <SearchBar />
       <img src={Spinner} id="loading" alt="loading Image" />
