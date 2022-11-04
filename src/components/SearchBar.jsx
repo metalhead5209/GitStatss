@@ -2,12 +2,13 @@ import { React, useState, useContext } from 'react';
 import styled from 'styled-components';
 import { FcSearch } from 'react-icons/fc';
 import { GitContext } from '../Context/context';
-import { SearchBarWrapper } from '../Wrappers';
+import { SearchBarWrapper, SearchErrorWrapper } from '../Wrappers';
 
 
 const SearchBar = () => {
     const [ user, setUser ] = useState('');
-    const { requests, error, searchGitUser } = useContext(GitContext);
+    const { error, searchGitUser } = useContext(GitContext);
+    // console.log(error);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -21,6 +22,11 @@ const SearchBar = () => {
   return (
     <section className='global-section'>
         <SearchBarWrapper className='global-section-center'>
+            {error.show && (
+                <SearchErrorWrapper>
+                    <p>This User Does Not Exist</p>
+                </SearchErrorWrapper>
+            )}
             <form onSubmit={handleSubmit}>
                 <div className="form-control">
                     <FcSearch />

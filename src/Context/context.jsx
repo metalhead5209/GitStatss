@@ -14,20 +14,25 @@ const GitProvider = ({ children }) => {
   const [githubRepos, setGithubRepos] = useState(staticRepos);
     // Load request
     const [ loading, setIsLoading] = useState(false);
-    const [ error, setError ] = useState({show:false, msg:""})
+    const [ error, setError ] = useState({show:false, msg:""});
   
     // Searc Github user
     const searchGitUser = async(user) => {
+      errMessage();
       const res = await axios(`${rootUrl}/users/${user}`).catch(err => console.log(err));
       console.log(res);
       if (res) {
         setGithubUser(res.data)
       }
       else {
-        errMessage(true, "There is no user with that name")
+        errMessage(true, "There is no user with that name");
       }
-      console.log(user);
-    }
+    };
+
+    const errMessage = (show = false, msg = "") => {
+      setError({show, msg});
+    };
+
 
 
     // Error Handling
@@ -35,16 +40,14 @@ const GitProvider = ({ children }) => {
       console.log('App Loaded')
     }, []);
  
-    function errMessage(show, msg) {
-      setError({show, msg})
-    }
-
+   
   return (
     <GitContext.Provider value={{
       githubUser,
       githubFollowers, 
       githubRepos, 
-      searchGitUser 
+      searchGitUser,
+      error 
       }}>
       {children}
     </GitContext.Provider>

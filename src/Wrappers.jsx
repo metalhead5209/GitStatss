@@ -475,7 +475,8 @@ export const SearchBarWrapper = styled.div`
     font-weight: 400;
   }
 `;
-const SearchErrorWrapper = styled.article`
+
+export const SearchErrorWrapper = styled.article`
   position: absolute;
   width: 90vw;
   top: 0;
