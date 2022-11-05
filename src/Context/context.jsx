@@ -38,13 +38,15 @@ const GitProvider = ({ children }) => {
       setLoading(false);
     };
 
+    
+ // Error Handling
     const errMessage = (show = false, msg = "") => {
       setError({show, msg});
     };
 
 
 
-    // Error Handling
+   
     useEffect(() => {
       console.log('App Loaded')
     }, []);
