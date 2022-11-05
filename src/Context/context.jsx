@@ -57,7 +57,7 @@ const GitProvider = ({ children }) => {
       githubRepos, 
       searchGitUser,
       error,
-      loading 
+      loading, 
       }}>
       {children}
     </GitContext.Provider>
