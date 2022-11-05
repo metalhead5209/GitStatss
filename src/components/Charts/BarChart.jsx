@@ -19,7 +19,16 @@ ReactFC.fcRoot(FusionCharts, Bar3d, CandyTheme);
 
 // STEP 3 - Creating the JSON object to store the chart configurations
 
+import { GitContext } from "../../Context/context";
+import Spinner from '../../assets/Spinner-1s-200px.gif';
+
 const BarChartComponent = ({ data }) => {
+  const { loading } = React.useContext(GitContext);
+  if (loading) {
+    return <main className="load">
+      <img src={Spinner} id='loading' alt='loading image' />
+    </main>
+  }
   const chartConfigs = {
     type: "bar3d", // The chart type
     width: "100%", // Width of the chart
