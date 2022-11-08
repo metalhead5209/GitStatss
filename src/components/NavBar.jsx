@@ -15,10 +15,14 @@ const NavBar = () => {
   } = useAuth0();
 
   if (isLoading) {
-    return <div>Loading....</div>
+    return <NavWrapper>
+    <div>Loading...</div>
+    </NavWrapper>
   };
   if (error) {
-    return <div>Oops...{error.message}</div>
+    return <NavWrapper>
+      <div>Oops...{error.message}</div>
+      </NavWrapper>
   };
 
   const USER = isAuthenticated && user;
