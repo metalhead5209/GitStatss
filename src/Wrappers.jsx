@@ -506,6 +506,7 @@ export const FooterWrapper = styled.section`
     justify-content: space-between;
   }
   img {
+    filter: drop-shadow(0 0 0.75rem white);
     width: 3em;
     height: 2em;
   }
