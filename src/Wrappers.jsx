@@ -487,3 +487,12 @@ export const SearchErrorWrapper = styled.article`
     letter-spacing: 2px;
   }
 `
+
+export const AuthWrapper = styled.section`
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  img {
+    width: 150px;
+  }
+`;
