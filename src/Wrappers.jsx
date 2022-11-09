@@ -83,7 +83,7 @@ export const NavWrapper = styled.nav`
   gap: 1.5rem;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  background: #b9b5b5;
+  background: #262a32;
 
   h4 {
     margin-bottom: 0;
@@ -91,8 +91,8 @@ export const NavWrapper = styled.nav`
   }
 
   img {
-    width: 35px;
-    height: 35px;
+    width: 100%;
+    height: 4em;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -382,6 +382,7 @@ export const RepoStatsWrapperB = styled.div`
    grid-template-columns: 1.5fr 1fr;
   justify-items: center;
   gap: 2rem;
+  margin-bottom: 2em;
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
   }
@@ -487,12 +488,26 @@ export const SearchErrorWrapper = styled.article`
     letter-spacing: 2px;
   }
 `
-
-export const AuthWrapper = styled.section`
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  img {
-    width: 150px;
+export const FooterWrapper = styled.section`
+  width: 100%;
+  height: 8em;
+  background-color: #262a32;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 2rem;
   }
-`;
+  .social-icon {
+    margin: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  img {
+    width: 3em;
+    height: 2em;
+  }
+`
+

@@ -3,9 +3,9 @@ import styled from "styled-components";
 import NavBar from "../components/NavBar";
 import SearchBar from "../components/SearchBar";
 import RepoStats from "../components/RepoStats";
+import Footer from "../components/Footer";
 import User from "../components/User";
 import UserData from "../components/UserData";
-import { ErrorWrapper } from "../Wrappers";
 import { GitContext } from "../Context/context";
 import Spinner from '../assets/Spinner-1s-200px.gif';
 
@@ -25,6 +25,7 @@ const Home = () => {
         <User />
         <UserData />
         <RepoStats />
+        <Footer />
     </main>
   );
 };
