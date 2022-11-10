@@ -1,4 +1,4 @@
-# react-github-profile
+# GitStats
 
 Search github profiles and view statistics\
 
