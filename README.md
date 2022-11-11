@@ -24,6 +24,21 @@ After a successful sign-in, the user will be brougth to the main dashboard. The 
 Second half of main dashboard
 ![dashboard-desktop 2](https://user-images.githubusercontent.com/73142998/201355545-6bb8f03e-affd-4c6a-a4e9-00f3facccfb3.png)
 
+If searching for a user that does not exist, an error in red text will be returned and placed at the top left of the search bar. 
+![user-search-error](https://user-images.githubusercontent.com/73142998/201356274-4173281f-2b64-4d03-b243-3bc97e3935d2.png)
+
+When a user inputs the correct URL, for example: an extra character at the end of the site URL, an error page is returned with a button that brings the user to either the login page or the dashboard depending on whether they have previously logged in or not. 
+![page-error](https://user-images.githubusercontent.com/73142998/201356565-9c76d50e-2fd0-4b5b-ab9c-60f1f9bada2f.png)
+
+# Mobile View
+![mobile-dash 1](https://user-images.githubusercontent.com/73142998/201356645-f9981166-337f-48ff-96d7-0b6d8d1d9a00.png)
+
+![mobile-dash 2](https://user-images.githubusercontent.com/73142998/201356668-377b2994-ceff-491b-b9b0-a6516cb6686a.png)
+
+![mobile-dash 3](https://user-images.githubusercontent.com/73142998/201356686-c82e4870-2b50-4a67-8c73-bff20b399f8c.png)
+
+
+
 
 
 
