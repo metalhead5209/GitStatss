@@ -3,7 +3,7 @@ This is a personal project of mine that utilizes the Github API which contains d
 
 [Github api](https://docs.github.com/en/rest)
 
-[Live Application](https://github-profile-finder-aaronrodi.netlify.app/)
+[Live Application](https://gitstatss.netlify.app/)
 Hosted on [Netlify]( https://www.netlify.com/)
 
 # Tech
@@ -20,3 +20,16 @@ After clicking on the login button, users will be brought to the sign in/sign up
 
 After a successful sign-in, the user will be brougth to the main dashboard. The navbar will show either thier GitHub profile picture or a letter representing the first letter of their first name. Users will will see the statistics of whichever user they type into the search bar.
 ![dashboard-desktop 1](https://user-images.githubusercontent.com/73142998/201355245-1e494a76-98a9-4370-8753-090553446aa1.png)
+
+Second half of main dashboard
+![dashboard-desktop 2](https://user-images.githubusercontent.com/73142998/201355545-6bb8f03e-affd-4c6a-a4e9-00f3facccfb3.png)
+
+
+
+
+
+
+
+
+
+
