@@ -10,4 +10,7 @@ Hosted on [Netlify]( https://www.netlify.com/)
 GitStats is a front-end application developed with React. I chose React Context to manage the data because all the data was coming from one source and would be used globally throughout the application. I utilized React Router to seamlessly navigate throughout the different component UI’s including the login page, dashboard, and error page. 
 To fetch the data from the [Github API]( https://docs.github.com/en/rest), I used the [Axios](https://www.axios.com/) library. Axios supports the promise API which makes fetching data simple and only requires a few lines of code. Once fetched, the data is filtered through functions that display a certain number of items depending on the query. For example: The top 100 followers are displayed while only the top 5 languages and specific repo stats. 
 Users have the ability to log in with either an email or password (fake or real) or use their GitHub credentials to log in. I used Auth0 to handle the authorization and authentication. Auth0 is a flexible, drop-in solution to add authentication and authorization services to your applications.
-![Uploading auth0_loginPage.png…]()
+
+#Usage
+When first entering the site, users will be directed to the login page. Here, they can click on the login button located under the hero image. 
+![login-desktop](https://user-images.githubusercontent.com/73142998/201353979-a1bfcb71-6113-4481-ad5b-e1d858e37f1f.png)
