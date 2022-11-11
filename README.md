@@ -35,12 +35,9 @@ When a user inputs the incorrect URL, for example: an extra character at the end
 
    ![mobile-dash 2](https://user-images.githubusercontent.com/73142998/201356668-377b2994-ceff-491b-b9b0-a6516cb6686a.png)
 
-   ![mobile-dash 3]()
+   ![mobile-dash 3](https://user-images.githubusercontent.com/73142998/201356686-c82e4870-2b50-4a67-8c73-bff20b399f8c.png)
    
-   <p align="center">
-  <img width="600" height="200" src="[https://www.python.org/python-.png](https://user-images.githubusercontent.com/73142998/201356686-c82e4870-2b50-4a67-8c73-bff20b399f8c.png)">
-</p>
-
+   
 
 
 
