@@ -13,7 +13,8 @@ Users have the ability to log in with either an email or password (fake or real)
 
 # Usage
 When first entering the site, users will be directed to the login page. Here, they can click on the login button located under the hero image. 
-![login-desktop](https://user-images.githubusercontent.com/73142998/201353979-a1bfcb71-6113-4481-ad5b-e1d858e37f1f.png)
+![login-desktop](https://user-images.githubusercontent.com/73142998/201476455-0b363c8d-d1c1-4790-a5f8-25aca11dade7.png)
+
 
 After clicking on the login button, users will be brought to the sign in/sign up page provided by [Auth0](https://auth0.com/). Here they can either sign up suing an email and password or they can sign in using their GitHub credentials.
 ![auth0_loginPage](https://user-images.githubusercontent.com/73142998/201354632-59effbe0-e317-4139-9b5d-fbb57d83b508.png)
