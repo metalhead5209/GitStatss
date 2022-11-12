@@ -10,7 +10,7 @@ const LoginPage = () => {
   return (
     <LoginWrapper>
         <div className="login-container">
-            <h1>Github Profiles</h1>
+            <h1>GitStatss</h1>
             <img src={LoginImg} className="login-img" alt="login" />
             <button className="login-btn" onClick={loginWithRedirect}>Login</button>
         </div>
