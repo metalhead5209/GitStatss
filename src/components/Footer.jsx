@@ -9,7 +9,7 @@ import LinkedinIcon from '../assets/linkedin.svg';
 const Footer = () => {
   return (
     <FooterWrapper>
-      <h1>Github Profiles</h1>
+      <h1>GitStatss</h1>
       <p>&copy; 2022 By Aaron Rodi</p>
       <div className="social-icon">
               <a href="https://github.com/metalhead5209" target="_blank">
